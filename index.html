@@ -7,65 +7,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="boot"><img src="https://win98icons.alexmeub.com/icons/png/computer_explorer-4.png"width="64">
-        <h2 style="margin-top: 15px;">retro terminal tutorial</h2>
-        <p>built by @0xmanidev</p>
-        <button id="bootBtn" class="boot-btn" onclick="startOS()">start system</button>
-    </div>
-    <div id="desktop">
-        <div style="display: flex;flex-direction: column;">
-            <div class="icon" id="terminalIcon"><img src="https://win98icons.alexmeub.com/icons/png/console_prompt-0.png">
+    <body>
+
+<div id="boot">
+    <img src="https://win98icons.alexmeub.com/icons/png/computer_explorer-4.png" width="64">
+    <h2 style="margin-top:15px;">retro terminal tutorial</h2>
+    <p>learn linux on web by@0xmanidev</p>
+<button id="bootBtn" class="boot-btn" onclick="startOS()">Start System</button>
+</div>
+
+<div id="desktop">
+    <div style="display:flex; flex-direction:column;">
+        <div class="icon" id="terminalIcon">
+            <img src="https://win98icons.alexmeub.com/icons/png/console_prompt-0.png" alt="Terminal">
             Terminal
-            </div>
-            <div class="icon" id="aboutIcon">
-                <img src="https://win98icons.alexmeub.com/icons/png/help_book_cool-0.png">
-                About
-            </div>
-            <div class="icon" id="instructionIcon">
-                <img src="https://win98icons.alexmeub.com/icons/png/notepad-0.png">
-                Manual
-            </div>
-            <div id="terminal" class="window" style="top: 50px;left: 120px;">
-                <div class="header" id="header">
-                    Terminal
-                <div class="close" id="closeBtn">X</div>
-                </div>
-                <div id="out" class="content">system booted successfully You are in the write place don't fear the terminal. We will learn some basic commands.
-                    Type 'help' to see available commands
-                </div>
-                <div class="cmdlline">
-                    <span id="prompt"class="prompt"></span>
-                    <input id="cmd" autocomplete="off" spellcheck="false">
-                </div>
-            </div>
-            <div id="aboutWin" class="window" style="top: 150px;left: 260px;width: 320px;">
-                <div class="header" id="aboutHeader">
-                    aboutme
-                    <div class="close" id="aboutClose">X</div>
-                </div>
-                <div class="info-body">
-                <div class="info-row"><span class="label">Name:</span>Manikanta Vasamasetti</div>
-                <div class="info-row"><span class="label">Email:</span><a href="mailto:manikanta.vasamsetti.dev@gmail.com">manikanta.vasamsetti.dev@gmail.com</a></div>
-                <div class="info-row"><span class="label">Github:</span><a href="https://github.com/0xmanidev">0xmanidev</a></div>
-            </div>
-        </div>
-        <div id="instructionWin" class="window" style="top: 120px; left: 420px;width: 420px;">
-            <div class="header" id="instructionHeader">System instruction</div>
-            <div class="close" id="instructionClose">X</div>
-        </div>
-        <div class="info-body">
-            <b>UI controls</b>
-            <div>Tap icons to open the windows</div>
-            <div>Drag title bar to move window</div>
-            <div>clicking inside the terminal auto focuses cursor</div>
-            <br>
-            <b>Terminal info</b>
-            <div>this is a personal project.this is a imitation of linux style command line with windows 95 theme and explore this by going to terminal and type help and press enter</div>
-        </div>
-        </div>
         </div>
 
+        <div class="icon" id="aboutIcon">
+            <img src="https://win98icons.alexmeub.com/icons/png/help_book_big-0.png" alt="About">
+            About
+        </div>
+
+        <div class="icon" id="instructionsIcon">
+            <img src="https://win98icons.alexmeub.com/icons/png/notepad-0.png" alt="Instructions">
+            Manual
+        </div>
     </div>
+
+    <div id="terminal" class="window" style="top:50px; left:120px;">
+        <div class="header" id="header">
+            Terminal
+            <div class="close" id="closeBtn">X</div>
+        </div>
+        <div id="out" class="content">System booted successfully. Type 'help' to see available commands.</div>
+        <div class="cmdline">
+            <span id="prompt" class="prompt"></span>
+            <input id="cmd" autocomplete="off" spellcheck="false">
+        </div>
+    </div>
+
+    <div id="aboutWin" class="window" style="top:150px; left:260px; width:320px;">
+        <div class="header" id="aboutHeader">
+            About me
+            <div class="close" id="aboutClose">X</div>
+        </div>
+        <div class="info-body">
+            <div class="info-row"><span class="label">Name:</span> Manikanta Vasamsetti</div>
+            <div class="info-row"><span class="label">Email:</span> <a href="mailto:manikanta.vasamsetti.dev@gmail.com">manikanta.vasametti.dev@gmail.com</a></div>
+            <div class="info-row"><span class="label">GitHub:</span> <a href="https://github.com/0xmanidev">0xmanidev</a>/div>
+        </div>
+    </div>
+
+    <div id="instructionsWin" class="window" style="top:120px; left:420px; width:420px;">
+        <div class="header" id="instructionsHeader">
+            System Instructions
+            <div class="close" id="instructionsClose">X</div>
+        </div>
+        <div class="info-body">
+            <b>UI Controls</b>
+            <div>- Tap / Click icons to open windows</div>
+            <div>- Drag title bars to move windows</div>
+            <div>- Clicking inside the terminal auto-focuses the text box</div>
+            <br>
+            <b>Terminal Info</b>
+            <div>This is a imitation of linux terminal with windows95 style ui and this has some built in commands that help you learn basics of linux. Type <b>help</b> inside the terminal for a full list of commands.</div>
+        </div>
+    </div>
+</div>
+
 
     <script src="script.js"></script>
 
