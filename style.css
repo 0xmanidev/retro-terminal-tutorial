@@ -3,12 +3,15 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-    font-family: "MS Sans Serif",Arial, sans-serif;
+    font-family: "MS Sans Serif", Arial, sans-serif;
     background: #008080;
     height: 100vh;
     overflow: hidden;
 }
+
+/* BOOT SCREEN */
 #boot {
     position: absolute;
     width: 100%;
@@ -22,51 +25,65 @@ body {
     z-index: 99999;
     font-family: monospace;
 }
-.boot-btn{
+
+.boot-btn {
     margin-top: 20px;
     padding: 8px 28px;
-    font-family: "MS Sans Serif",Arial, sans-serif;
+    font-family: "MS Sans Serif", Arial, sans-serif;
     font-size: 14px;
     background: #c0c0c0;
     border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
     border-right: 2px solid #404040;
-    border-left: 2px solid#ffffff;
     border-bottom: 2px solid #404040;
     cursor: pointer;
-
 }
-.icon{
+
+.boot-btn:active {
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* DESKTOP */
+#desktop {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.icon {
     width: 80px;
     text-align: center;
     color: white;
     margin: 16px;
     cursor: pointer;
     user-select: none;
-    float: left;
+    float: left; /* Allows icons to stack side by side if needed */
 }
-.icon img{
+
+.icon img {
     width: 32px;
     height: 32px;
     display: block;
     margin: 0 auto 6px auto;
 }
-#desktop{
-    display: none;
-    width:100vw;
-    height: 100vh;
-    position: relative;
-}
-.window{
+
+/* WINDOWS */
+.window {
     position: absolute;
     width: 640px;
-    max-width: 95vh;
+    max-width: 95vw; /* Mobile responsive */
     background: #c0c0c0;
     border: 2px outset white;
     display: none;
     flex-direction: column;
-    box-shadow: 3px 3px 0 #000000;
+    box-shadow: 3px 3px 0 #000;
 }
-.header{
+
+.header {
     background: #000080;
     color: white;
     padding: 6px 8px;
@@ -77,22 +94,26 @@ body {
     font-weight: bold;
     user-select: none;
 }
-.close{
+
+.close {
     background: #c0c0c0;
-    color: #000000;
+    color: black;
     border: 2px outset white;
     width: 20px;
     height: 20px;
     text-align: center;
-    line-height: 15px;
+    line-height: 16px;
     font-size: 14px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.close :active{
+
+.close:active {
     border-style: inset;
 }
-.content{
-    background-color: black;
+
+/* TERMINAL */
+.content {
+    background: black;
     color: #00ff66;
     font-family: monospace;
     height: 420px;
@@ -102,37 +123,46 @@ body {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
-.cmdline{
-    display: flex;background: black;
+
+.cmdline {
+    display: flex;
+    background: black;
     border-top: 1px solid #333;
     padding-bottom: 5px;
     padding-top: 5px;
 }
-.prompt{
+
+.prompt {
     color: #00ff66;
     padding-left: 6px;
     font-family: monospace;
     white-space: pre;
 }
-#cmd{
+
+#cmd {
     flex: 1;
     background: black;
+    color: #00ff66;
     border: none;
     outline: none;
     font-family: monospace;
     padding-left: 4px;
     font-size: 14px;
 }
-.info-body{
+
+/* INFO WINDOWS */
+.info-body {
     padding: 14px;
     font-size: 14px;
     line-height: 1.6;
     background: #c0c0c0;
 }
-.info-row{
-    margin: 8px;
+
+.info-row {
+    margin: 8px 0;
 }
-.label{
+
+.label {
     display: inline-block;
     width: 90px;
     font-weight: bold;
