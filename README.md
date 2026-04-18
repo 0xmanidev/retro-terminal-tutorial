@@ -16,5 +16,4 @@ I spent <img width="511" height="244" alt="image" src="https://github.com/user-a
 
 ## these are the commands I implemented so far you can also access them using help command
 <img width="537" height="334" alt="image" src="https://github.com/user-attachments/assets/af1fb989-f5bf-43d8-a4a7-0b5a8c63a3ae" />
-
-
+credit to https://win98icons.alexmeub.com/ for icons
