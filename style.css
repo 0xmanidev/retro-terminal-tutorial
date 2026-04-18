@@ -102,3 +102,38 @@ body {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
+.cmdline{
+    display: flex;background: black;
+    border-top: 1px solid #333;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.prompt{
+    color: #00ff66;
+    padding-left: 6px;
+    font-family: monospace;
+    white-space: pre;
+}
+#cmd{
+    flex: 1;
+    background: black;
+    border: none;
+    outline: none;
+    font-family: monospace;
+    padding-left: 4px;
+    font-size: 14px;
+}
+.info-body{
+    padding: 14px;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #c0c0c0;
+}
+.info-row{
+    margin: 8px;
+}
+.label{
+    display: inline-block;
+    width: 90px;
+    font-weight: bold;
+}
