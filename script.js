@@ -6,10 +6,18 @@ const desktop= document.getElementById("desktop")
 
 let cwd =["home","user"];
 function startOS(){
-    bootBtn.style.display='none';
-    boot.style.display='block';
+    document.getElementById("boot").style.display='none';
+    document.getElementById("desktop").style.display='block';
     renderPrompt();
 }
 function renderPrompt(){
     prompt.textContent = "user@computer:/"+ cwd.join("/")+"$";
 }
+
+let highestZ = 10;
+function bringtoFront(win){
+    highestZ++;
+    win.style.zIndex = highestZ;
+}
+
+const allWindows = document.querySelectorAll()
